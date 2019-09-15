@@ -1,0 +1,17 @@
+<doctype html>
+<title> Result</title>
+<body>
+{% for key,value in result.items() %}
+  <h3>{{key}}</h3>
+<h3>{{ value }}</h3>
+{% endfor %}
+<h3> The recommended pesticides used for the {{ value }} is</h3>
+{% if value== 'Bacterial'}
+<h3>The combination of Agrimycin 100 + Fytolan </h3>
+{% elif value == 'Brown' %}
+<h3> spray 1g of ediphenphos or 2g mancozeb or 2.25g Zineb in 1liter of water.</h3>
+{% else %}
+<h3>Spray - Carbendazim + Thiram + Mancozeb (1:1:1) 0.2% at 50% flowering stage.</h3>
+</body>
+
+</html>
